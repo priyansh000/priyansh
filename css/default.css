@@ -344,6 +344,13 @@ h6 {
   font-size: 14px;
 }
 
+/* .my-email {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+} */
+
 #contact-form {
   display: block;
   max-width: 600px;
