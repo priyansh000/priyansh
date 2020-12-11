@@ -1,0 +1,6 @@
+#Ignore these folders
+Examples
+images
+
+#Ignore these files with this extension
+*.xd
