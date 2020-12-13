@@ -351,6 +351,11 @@ h6 {
   margin-bottom: 10px;
 } */
 
+address {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 #contact-form {
   display: block;
   max-width: 600px;
