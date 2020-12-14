@@ -356,7 +356,7 @@ address {
   text-align: center;
 }
 
-#contact-form {
+/* #contact-form {
   display: block;
   max-width: 600px;
   margin: 0 auto;
@@ -365,7 +365,7 @@ address {
   border-radius: 5px;
   background-color: var(--mainColor);
   margin-bottom: 50px;
-}
+} */
 
 #contact-form label {
   line-height: 2.7em;
@@ -407,6 +407,7 @@ address {
 }
 
 .screenshots {
+  padding-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "web web mobile";
@@ -417,14 +418,14 @@ address {
 .web {
   grid-area: web;
   max-width: 500px;
-  height: 370px;
+  height: 60vh;
   overflow: scroll;
 }
 
 .mobile {
   max-width: 250px;
   grid-area: mobile;
-  height: 370px;
+  height: 60vh;
   overflow: scroll;
 }
 
