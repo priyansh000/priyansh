@@ -351,10 +351,19 @@ h6 {
   margin-bottom: 10px;
 } */
 
-/* address {
+address {
   margin-bottom: 50px;
   text-align: center;
-} */
+}
+
+.whatsapp {
+  background-color: var(--secondaryColor);
+  padding: 3px;
+}
+
+.whatsapp > i {
+  color: #17a2b8;
+}
 
 #contact-form {
   display: block;
