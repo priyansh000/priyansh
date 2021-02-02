@@ -351,12 +351,12 @@ h6 {
   margin-bottom: 10px;
 } */
 
-address {
+/* address {
   margin-bottom: 50px;
   text-align: center;
-}
+} */
 
-/* #contact-form {
+#contact-form {
   display: block;
   max-width: 600px;
   margin: 0 auto;
@@ -365,7 +365,7 @@ address {
   border-radius: 5px;
   background-color: var(--mainColor);
   margin-bottom: 50px;
-} */
+}
 
 #contact-form label {
   line-height: 2.7em;
