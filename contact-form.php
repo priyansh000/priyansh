@@ -1,24 +1,35 @@
 <?php
-    $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
-    $message = $_POST['message'];
+$errors = '';
+$myemail = 'contact@prashaant.in';//<-----Put Your email address here.
+if(empty($_POST['name'])  ||
+if(empty($_POST['subject'])  ||
+   empty($_POST['email']) ||
+   empty($_POST['message']))
+{
+    $errors .= "\n Error: all fields are required";
+}
+$name = $_POST['name'];
+$subject = $_POST['subject'];
+$email_address = $_POST['email'];
+$message = $_POST['message'];
+if (!preg_match(
+"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
+$email_address))
+{
+    $errors .= "\n Error: Invalid email address";
+}
 
-    $email_from = 'prashaant.in'
-
-    $email_subject = 'New Form Submission';
-
-    $email_body = 'User Name: $name.\n'.
-                    'User Email: $visitor_email.\n'.
-                        'User Message: $message.\n';
-
-    $to = 'contact@prashaant.in';
-
-    $headers = 'From: $email_from \r\n';
-
-    $headers = 'Reply-To: $visitor_email \r\n';
-
-    mail($to, $email_subject, $email_body, $headers);
-
-    header('Location: index.html');
-    
+if( empty($errors))
+{
+$to = $myemail;
+$email_subject = "$subject";
+$email_body = "You have received a new message. ".
+" Here are the details:\n Name: $name \n ".
+"Email: $email_address\n Subject: $subject \n Message \n $message";
+$headers = "From: $myemail\n";
+$headers .= "Reply-To: $email_address";
+mail($to,$email_subject,$email_body,$headers);
+//redirect to the 'thank you' page
+header('Location: contact-form-thank-you.html');
+}
 ?>
