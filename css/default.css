@@ -333,6 +333,12 @@ h6 {
   margin-bottom: 20px;
 }
 
+#smart-brain-img {
+  width: 100%;
+  justify-self: center;
+  margin-bottom: 20px;
+}
+
 .post-wrapper {
   display: grid;
   justify-content: center;
