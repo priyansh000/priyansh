@@ -13,6 +13,8 @@
   --previewShadow: #f0ead6;
 
   --btnColor: black;
+
+  --transition: all ease-in-out 0.3s;
 }
 
 html,
@@ -352,6 +354,11 @@ h6 {
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  transition: var(--transition);
+}
+
+.post:hover {
+  transform: scale(0.95);
 }
 
 #thumbnail {
