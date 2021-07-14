@@ -358,7 +358,7 @@ h6 {
 }
 
 .post:hover {
-  transform: scale(0.95);
+  transform: translateY(-10px);
 }
 
 #thumbnail {
@@ -484,15 +484,15 @@ address {
 
 /* Blogs */
 .blog-wrapper {
-  cursor: pointer;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 400px);
+  grid-template-columns: repeat(auto-fit, 320px);
   gap: 20px;
   padding-bottom: 50px;
 }
 
 .blog {
+  cursor: pointer;
   border: 1px solid var(--borderColor);
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -501,13 +501,13 @@ address {
 }
 
 .blog:hover {
-  transform: scale(0.95);
+  transform: translateY(-10px);
 }
 
 #blog-thumbnail {
   display: block;
   width: 100%;
-  height: 250px;
+  height: 180px;
   object-fit: cover;
   object-position: 0% 0%;
 }
