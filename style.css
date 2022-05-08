@@ -86,8 +86,7 @@ p {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 1.875rem;
+  justify-content: space-around;
   position: absolute;
   top: 0;
   right: 0;
