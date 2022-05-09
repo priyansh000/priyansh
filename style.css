@@ -77,6 +77,16 @@ p {
 }
 
 /* ==================== Home ==================== */
+#home {
+  background-color: #040d21;
+}
+
+#home img {
+  width: 100%;
+  position: absolute;
+  opacity: 0.2;
+}
+
 .home-container {
   position: relative;
 }
