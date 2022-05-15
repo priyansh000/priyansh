@@ -1,23 +1,23 @@
 // Journey===============================================================
 const journeyArr = [
   {
-    image: "./assets/learning.svg",
-    period: "Jan'22 - Apr'22",
+    image: "./assets/VFD.svg",
+    period: "Jan'22 - Mar'22",
     designation: "Embedded System Engineer Intern at Deserve Industrial Automation",
     description: [
-      "As I have been always passionated about computers, I started exploring & learning web development.",
+      "As my curiosity is related to Automation and Technologies so I took experience in Industrial Automation Company and on this Internship period i particularly focus in VFD and It's configuration  .",
     ],
   },
   {
-    image: "./assets/learning.svg",
+    image: "./assets/AI.svg",
     period: "Aug'20 - Jan'21",
     designation: "IoT Engineer Intern at Pie Infosys",
     description: [
-      "As I have been always passionated about computers, I started exploring & learning web development.",
+      "As I have been always passionated about Smart Devices, I started exploring & learning about Intenet of Things as Intern.",
     ],
   },
   {
-    image: "./assets/construction.svg",
+    image: "./assets/Education.svg",
     period: "Aug'18 - May'22",
     designation: "Electronics & Communications Engineering",
     description: [
@@ -61,22 +61,22 @@ document.getElementById("journey-single").innerHTML = journeyArr
 // Left side
 const projectLeftArr = [
     {
-        title: 'YelpCamp on Heroku',
-        description: 'Web Development',
-        techs: ['NodeJs', 'ExpresJs', 'MongoDB'],
-        image: 'https://images.pexels.com/photos/618848/pexels-photo-618848.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        title: 'Capcha Recognition',
+        description: 'Solving boring capcha Automatically using machine learning',
+        techs: ['Python', 'Google colab', 'Github'],
+        image: './Img/AI.jpg'
     },
     {
-        title: 'Restaurant Management System',
-        description: 'Front-End Development',
-        techs: ['Angular 6+', 'Angular Animations', 'Firebase'],
-        image: 'https://images.pexels.com/photos/35550/ipad-tablet-technology-touch.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        title: 'Smart Parking System',
+        description: 'Making a system which works through real time data collection and helps user to find vacant parking spots',
+        techs: ['Arduino', 'NodeMCU', 'Sensors'],
+        image: './Img/SPS.jpg'
     },
     {
-        title: 'Auction System',
-        description: 'Web Development, E-Commerce',
-        techs: ['C#, .Net', 'WebRTC, SignalR', 'MVC5'],
-        image: 'https://image.freepik.com/free-vector/man-stand-leading-auction-hold-gavel_102902-161.jpg'
+        title: 'Bluetooth Controlled Robot',
+        description: 'A robotic car can controlled by Mobile application through Bluetooth Connectivity',
+        techs: ['Arduino', 'Bluetooth' , 'Motors'],
+        image: './Img/BTcar.jpg'
     },
 ]
 
@@ -104,22 +104,22 @@ document.getElementById('project-left').innerHTML = projectLeftArr.map(project =
 // Right side
 const projecRightArr = [
     {
-        title: 'Distance Learning',
-        description: 'Web Development',
-        techs: ['C#, .Net', 'WebRTC, SignalR', 'MVC5'],
-        image: 'https://images.pexels.com/photos/5054213/pexels-photo-5054213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        title: 'Gesture Controlled Robot',
+        description: 'A robotic car or any robotic part can move and control with simple hand gesture',
+        techs: ['Motion sensor', 'NodeMCU', 'Hardware'],
+        image: './IMG/GC.jpg'
     },
     {
-        title: 'Event Management',
-        description: 'Web Development',
-        techs: ['NodeJs', 'GraphQL', 'MongoDB'],
-        image: 'https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        title: 'Home Automation',
+        description: 'System that can monitor and control home systems or appliances using Mobile, Desktop interface and Personal Assistant.',
+        techs: ['NodeMCU', 'Relay', 'Cloud API'],
+        image: './IMG/SH.jpg'
     },
     {
-        title: 'Personal Portfolio',
-        description: 'Website Design',
+        title: 'Consumable item info and management webpage',
+        description: 'Create database of consumable item’s record in MySQL database and provided facility to Update, edit, add, and delete record.',
         techs: ['HTML', 'CSS', 'JavaScript'],
-        image: './assets/portfolio-pic.jpg'
+        image: './IMG/WT.jpg.jpg'
     },
 ]
 
