@@ -11,6 +11,15 @@
   --transition: 200ms;
 }
 
+// ==================== Variables ====================
+$color-light: #2c2d31;
+$color-dark: #242529;
+$color-accent: #5bcb8b;
+$color-primary-text: #ffffff;
+$color-secondary-text: #78797d;
+$color-project-card: #2d3037;
+$transition: 200ms;
+
 /* ==================== Reset Styles ==================== */
 body,
 html,
@@ -161,6 +170,75 @@ p {
   width: 6.25rem;
 }
 
+// ==================== Projects ====================
+.projects-wrapper {
+  h3 {
+    margin-bottom: 1rem;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.project {
+  width: 100%;
+  max-width: 500px;
+  background: $color-project-card;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -12px 5px 22px 3px rgba(0, 0, 0, 0.2);
+  transition: all ease-in-out $transition;
+  &:hover {
+    transform: scale(0.98);
+  }
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .descreption {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      h4 {
+        color: $color-accent;
+      }
+      p {
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+      }
+      a span {
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px;
+        background: $color-dark;
+        color: $color-primary-text;
+      }
+    }
+    .tech {
+      p {
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 0 0 5px 0;
+        background: $color-dark;
+      }
+    }
+  }
+  img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
 /* ==================== Contact ==================== */
 .contact h4 {
   color: var(--color-secondary-text);
@@ -180,6 +258,25 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 6.25rem 3.125rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .navbar {
+    padding: 2rem 7rem;
+  }
+
+  #home .container {
+    padding-top: 170px;
+  }
+
+  .projects {
+    flex-direction: row;
+  }
+
+  .projects-left .heading {
+    margin: 130px 0 130px 0;
+    text-align: center;
   }
 }
 
