@@ -107,19 +107,19 @@ const projecRightArr = [
         title: 'Gesture Controlled Robot',
         description: 'A robotic car or any robotic part can move and control with simple hand gesture',
         techs: ['Motion sensor', 'NodeMCU', 'Hardware'],
-        image: './IMG/GC.jpg'
+        image: './Img/GC.jpg'
     },
     {
         title: 'Home Automation',
         description: 'System that can monitor and control home systems or appliances using Mobile, Desktop interface and Personal Assistant.',
         techs: ['NodeMCU', 'Relay', 'Cloud API'],
-        image: './IMG/SH.jpg'
+        image: './Img/SH.jpg'
     },
     {
         title: 'Consumable item info and management webpage',
         description: 'Create database of consumable item’s record in MySQL database and provided facility to Update, edit, add, and delete record.',
         techs: ['HTML', 'CSS', 'JavaScript'],
-        image: './IMG/WT.jpg.jpg'
+        image: './Img/WT.jpg'
     },
 ]
 
