@@ -119,7 +119,7 @@ const projecRightArr = [
         title: 'Consumable item info and management webpage',
         description: 'Create database of consumable item’s record in MySQL database and provided facility to Update, edit, add, and delete record.',
         techs: ['HTML', 'CSS', 'JavaScript'],
-        image: './Img/AI.jpg'
+        image: './Img/WT.jpg'
     },
 ]
 
